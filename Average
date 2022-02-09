@@ -1,0 +1,32 @@
+#include<stdio.h>
+void main()
+{
+    int a,b;
+    float avg;
+    printf("Enter a 1st number: ");
+    scanf("%d", &a);
+    printf("Enter a 2nd number: ");
+    scanf("%d", &b);
+    //%.2f is used for displaying output upto two decimal places
+    avg = (float)(a+b)/2;
+    printf("The avg of %d and % d is %.2f", a,b,avg);
+}
+
+
+//or
+
+#include<stdio.h>
+void main()
+{
+    int a,b;
+    int avg;
+    printf("Enter a 1st number: ");
+    scanf("%d", &a);
+    printf("Enter a 2nd number: ");
+    scanf("%d", &b);
+    avg = (a+b)/2;
+    printf("The avg of %d and % d is %df", a,b,avg);
+}
+
+//or
+
