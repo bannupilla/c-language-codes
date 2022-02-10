@@ -1,0 +1,32 @@
+#include <stdio.h>
+struct savings
+{
+    int account_number;
+    char Name[30];
+    int Balance;
+}s;
+int main()
+{      
+    struct savings Customer;
+       printf("Enter account number: ");
+       scanf("%d", &s.account_number);
+       fflush(stdin);
+      
+       printf("Enter the balance: ");
+       scanf("%d", &s.Balance);
+       
+       fflush(stdin);
+       
+       printf("Enter Holder name: ");
+       scanf("%s", &s.Name);
+      
+      
+      //displaying details//
+      
+       printf("\nAccount holder name is : ");
+       printf("%s\n", s.Name);
+       printf("account_number: %d\n", s.account_number);
+       printf("Balance is : %d rs/-\n", s.Balance);
+       
+       return 0;
+}
