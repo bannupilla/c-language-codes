@@ -1,0 +1,22 @@
+#include <stdio.h>
+const double PI = 3.14;
+int main() {
+    int s;
+    printf("Enter the value of s: \n");
+    scanf("%d", &s);
+    printf("The area is: %f", PI*s*s);
+    return 0;
+}
+
+
+
+
+#include <stdio.h>
+#define PI 3.14
+int main() {
+    int s;
+    printf("Enter the value of s: \n");
+    scanf("%d", &s);
+    printf("The area is: %f", PI*s*s);
+    return 0;
+}
