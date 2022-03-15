@@ -1,0 +1,40 @@
+
+//c and c++ only has sizeof() operator. ( python and java doesnt have/ use this operaror//
+
+#include <stdio.h> 
+int main() 
+{ 
+	printf("%zu\n", sizeof(int)); 
+	
+	printf("%zu\n", sizeof(char)); 
+	
+	printf("%zu\n", sizeof(long)); 
+	
+	printf("%zu\n", sizeof(float)); 
+	return 0; 
+} 
+
+=====================================
+
+
+find value of declared value :
+
+#include <stdio.h> 
+int main() 
+{ 
+    int x = 10;
+	printf("%zu\n", sizeof(x)); 
+	return 0; 
+} 
+
+==================================
+
+#include <stdio.h> 
+int main() 
+{ 
+    long x = 10;
+	printf("%zu\n", sizeof(x++)); 
+	return 0; 
+} 
+==================================
+
