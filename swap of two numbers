@@ -1,0 +1,32 @@
+#include <stdio.h> 
+int main()
+{
+    int a, b;
+    printf("Enter the value of a: ");
+    scanf("%d", &a);
+    printf("Enter the value of b: ");
+    scanf("%d", &b);
+   int temp = a;
+    a = b;
+    b = temp;
+    printf("The new value of a is %d\n", a);
+    printf("The new value of b is %d", b);
+    return 0;
+}
+
+
+//===============
+//modified( no of lines is reduced)
+
+#include <stdio.h> 
+int main()
+{
+    int a, b;
+    printf("Enter the value of a and b: ");
+    scanf("%d %d", &a, &b);
+   int temp = a;
+    a = b;
+    b = temp;
+    printf("The new value of \na=%d\nb=%d", a, b);
+    return 0;
+}
