@@ -1,0 +1,22 @@
+#include <stdio.h> 
+
+const double PI = 3.14;
+int main() 
+{ 
+    static int x;
+	
+	printf("%d", x); 
+	
+	return 0; 
+} 
+
+
+/*
+o/p 
+0
+
+y?
+unintialized static variables have value 0 by default
+
+*/
+
