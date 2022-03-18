@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main() {
+    int n;
+    printf("Enter the number you want to find the last digit for :");
+    scanf("%d", &n);
+    int val = (n)%10;
+    printf("The last digit of %d given number is %d ", n, val);
+    return 0;
+}
