@@ -1,0 +1,50 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int main() {
+    int n,d;
+    printf("0 stands for Sunday\n1 stands for Monday\n2 stands for Tuesday\n3 stands for Wednesday\n4 stands for Thursday\n5 stands for Friday\n6 stands for saturday");
+    printf("\n\nEnter the day:");
+    scanf("%d",&d);
+    printf("enter the day you want to find: ");
+    scanf("%d", &n);
+    int res = n % 7;
+    int val = d - res;
+   if(val<0)
+   {
+       int newval = val+7;
+       printf("The day is %d", newval);
+      if(newval==0)
+      printf("\nwhich is sunday");
+      if(newval==1)
+      printf("\nwhich is Monday");
+      if(newval==2)
+      printf("\nwhich is Tuesday");
+      if(newval==3)
+      printf("\nwhich is Wednesday");
+      if(newval==4)
+      printf("\nwhich is Thursday");
+      if(newval==5)
+      printf("\nwhich is Friday");
+      if(newval==6)
+      printf("\nwhich is saturday");
+   }
+   else
+   {
+       printf("The day before %d days is %d", n, val);
+      if(val==0)
+      printf("\nwhich is sunday");
+      if(val==1)
+      printf("\nwhich is Monday");
+      if(val==2)
+      printf("\nwhich is Tuesday");
+      if(val==3)
+      printf("\nwhich is Wednesday");
+      if(val==4)
+      printf("\nwhich is Thursday");
+      if(val==5)
+      printf("\nwhich is Friday");
+      if(val==6)
+      printf("\nwhich is saturday");
+   }
+    return 0;
+}
