@@ -19,8 +19,8 @@ printf("Enter the num you want to find the last digit for :");
     scanf("%d", &n);
     if(n<0)
     {
-       int val = -(n % 10);
-  printf("The last digit of %d given number is -%d ", n, val);
+       int val = -(n % 10); // we want just the last digit no it need not be print with negative value
+  printf("The last digit of %d given number is %d ", n, val);
     }
     else
     {
@@ -29,3 +29,24 @@ printf("Enter the num you want to find the last digit for :");
     }
     return 0;
 }
+=========================
+
+
+#include <stdio.h>
+int main() {
+    int n;
+    scanf("%d", &n);
+    int ans;
+    if(n<0)
+    {
+     ans = -(n % 10);
+    }
+    else
+    {
+     ans = (n)%10;
+    }
+    printf("The last digit of %d given number is %d ", n, ans);
+    return 0;
+}
+
+
