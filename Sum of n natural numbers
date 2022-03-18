@@ -1,0 +1,9 @@
+#include <stdio.h>
+int main() {
+    int n;
+    printf("Enter the number you want to find the sum for :");
+    scanf("%d", &n);
+    int val = (n*(n+1))/2;
+    printf("The sum of %d natural numbers is %d ", n, val);
+    return 0;
+}
